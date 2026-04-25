@@ -1,0 +1,234 @@
+Name:
+Version:1.0.1-beta3
+
+# 是否打包正式版 PCL，以便没有启动器的玩家安装整合包。
+IncludeLauncher:True
+
+# 是否打包 PCL 个性化内容，例如功能隐藏设置、主页、背景音乐和图片等。
+IncludeLauncherCustom:False
+
+# 是否将 Mod、资源包、光影包的文件直接放入整合包中，这样在导入时就无需联网下载它们。
+# 建议仅在无法稳定连接 CurseForge 或 Modrinth 时才考虑启用。
+# 二次分发可能违反使用协议，请尽量不要公开发布包含资源文件的整合包！
+DontCheckHostedAssets:True
+
+# 若资源未在 Modrinth 上托管，则将其原始文件直接放入整合包中。
+# 如果你想将整合包上传到 Modrinth，这能帮助你分辨哪些文件未在 Modrinth 上托管。
+# 此选项与 DontCheckHostedAssets 冲突。
+ModrinthUploadMode:False
+
+# 导出的文件的存放位置。
+# 若设置了此项，在导出时会直接将文件放到此路径，不会弹窗要求选择。
+# 若 IncludeLauncher 为 True，应以 .zip 结尾；若为 False，应以 .mrpack 结尾。
+PackPath:C:\Users\admin\Desktop
+
+==============================================================
+
+# 修改下方的规则以控制需要导出的内容。
+# 以 ! 开头以反选。可以使用 *、?、[] 通配符。靠后的行覆盖靠前的。
+
+# 游戏本体设置
+options.txt
+configureddefaults/
+
+# Mod
+mods/
+!mods/*.disabled
+!mods/*.old
+!mods/.connector/
+coremods/
+lib/
+
+# Mod 设置
+config/
+!config/jei/world/
+!config/worldedit/
+config/worldedit/worldedit.properties
+!config/spark/
+config/spark/config.json
+defaultconfigs/
+journeymap/config/
+journeymap/server/
+TrashSlotSaveState.json
+customfov.txt
+gg.essential.mod/
+essential/
+!essential/*/
+!essential/*.jar*
+!essential/screenshot-checksum-caches.json
+!essential/microsoft_accounts.json
+paragliderSettings.nbt
+local/client_config.json
+local/ftbl.json
+local/client/sidebar_buttons.json
+local/client/ftbutilities.cfg
+local/client/ftblib.cfg
+local/client/xencraft.cfg
+liteloader.properties
+default_reference.xml
+CustomSkinLoader/CustomSkinLoader.json
+!config/tacz/custom
+
+# 已绘制的地图
+journeymap/data/
+xaero/
+XaeroWaypoints/
+XaeroWorldMap/
+
+# APM_100_TPA_Addon.zip
+resourcepacks/APM_100_TPA_Addon.zip
+
+# Class390_Avanti_MTR4.zip
+resourcepacks/Class390_Avanti_MTR4.zip
+
+# DBKS Train Beta 1.zip
+resourcepacks/DBKS Train Beta 1.zip
+
+# DEWON-DOCTOR_YELLOW_2.0.zip
+resourcepacks/DEWON-DOCTOR_YELLOW_2.0.zip
+
+# DEWON-N700_&_Kamome-4.0-MTR4.zip
+resourcepacks/DEWON-N700_&_Kamome-4.0-MTR4.zip
+
+# DEWON-TGV_atlantique_thalys-2.0 (1).zip
+resourcepacks/DEWON-TGV_atlantique_thalys-2.0 (1).zip
+
+# DEWON-TGV_Duplex_PBKA_1.0.zip
+resourcepacks/DEWON-TGV_Duplex_PBKA_1.0.zip
+
+# DEWON-TGV_PSE_&_postal-2.0.zip
+resourcepacks/DEWON-TGV_PSE_&_postal-2.0.zip
+
+# FREE YUTONG U12.zip
+resourcepacks/FREE YUTONG U12.zip
+
+# HYWenHei-85W字体包.zip
+resourcepacks/HYWenHei-85W字体包.zip
+
+# JRE_235_Series_v1.2.zip
+resourcepacks/JRE_235_Series_v1.2.zip
+
+# JRW-207-1000_MTR4.zip
+resourcepacks/JRW-207-1000_MTR4.zip
+
+# JR_East_E235_Series_v1.4 (1).zip
+resourcepacks/JR_East_E235_Series_v1.4 (1).zip
+
+# LHT L17站台报站包.zip
+resourcepacks/LHT L17站台报站包.zip
+
+# LHT Line17车站语音包.zip
+resourcepacks/LHT Line17车站语音包.zip
+
+# lightace_lrv_mtr4_v1.0.zip
+resourcepacks/lightace_lrv_mtr4_v1.0.zip
+
+# Masa_模组汉化资源包_V1.3-全版本.zip
+resourcepacks/Masa_模组汉化资源包_V1.3-全版本.zip
+
+# Minecraft-Mod-Language-Modpack-Converted-1.20.1.zip
+resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.20.1.zip
+
+# MTR国铁轨道追加正式版ver2.5.zip
+resourcepacks/MTR国铁轨道追加正式版ver2.5.zip
+
+# QJRpack_MTR4_V0.1.zip
+resourcepacks/QJRpack_MTR4_V0.1.zip
+
+# QJRsigns pids packV0.1.zip
+resourcepacks/QJRsigns pids packV0.1.zip
+
+# SCR_Class68_MTR4.zip
+resourcepacks/SCR_Class68_MTR4.zip
+
+# SodiumTranslations.zip
+resourcepacks/SodiumTranslations.zip
+
+# [250903][森哥][MTR]北京公交福田系列.zip
+resourcepacks/[[]250903[]][[]森哥[]][[]MTR[]]北京公交福田系列.zip
+
+# §c§lShanghai §a§lMetro §e§lAddon §5v3.3.10.zip
+resourcepacks/§c§lShanghai §a§lMetro §e§lAddon §5v3.3.10.zip
+
+# 中国铁路追加包[KD25G].zip
+resourcepacks/中国铁路追加包[[]KD25G[]].zip
+
+# 南际-雪炎贯通线涂装v1.2.zip
+resourcepacks/南际-雪炎贯通线涂装v1.2.zip
+
+# 新艾利都地铁ERIDU-DG1000A.zip
+resourcepacks/新艾利都地铁ERIDU-DG1000A.zip
+
+# 方圆轨交列车×报站追加包v1.2.zip
+resourcepacks/方圆轨交列车×报站追加包v1.2.zip
+
+# 深圳地铁14号线_新车头.zip
+resourcepacks/深圳地铁14号线_新车头.zip
+
+# 港鐵載客列車(帶集電弓).zip
+resourcepacks/港鐵載客列車(帶集電弓).zip
+
+# 澜山快线追加0.1.2.zip
+resourcepacks/澜山快线追加0.1.2.zip
+
+# 相安铁路追加包 v0.2.1.zip
+resourcepacks/相安铁路追加包 v0.2.1.zip
+
+# 绿宝石图标.zip
+resourcepacks/绿宝石图标.zip
+
+# 轻蓝二周目中心区追加包.zip
+resourcepacks/轻蓝二周目中心区追加包.zip
+
+# Bliss_v2.0.4_(Chocapic13_Shaders_edit).zip
+shaderpacks/Bliss_v2.0.4_(Chocapic13_Shaders_edit).zip
+
+# BSL_v8.4.zip
+shaderpacks/BSL_v8.4.zip
+
+# ComplementaryReimagined_r5.5.1.zip
+shaderpacks/ComplementaryReimagined_r5.5.1.zip
+
+# ComplementaryUnbound_r5.5.1.zip
+shaderpacks/ComplementaryUnbound_r5.5.1.zip
+
+# Derivative Main d24.4.14.zip
+shaderpacks/Derivative Main d24.4.14.zip
+
+# MakeUp-UltraFast-9.1d.zip
+shaderpacks/MakeUp-UltraFast-9.1d.zip
+
+# miniature-shader-2.14.7.zip
+shaderpacks/miniature-shader-2.14.7.zip
+
+# photon_v1.1.zip
+shaderpacks/photon_v1.1.zip
+
+# Sildur's Basic Shaders v2.2 Fancy.zip
+shaderpacks/Sildur's Basic Shaders v2.2 Fancy.zip
+
+# Sildur's Enhanced Default v1.16 Fancy.zip
+shaderpacks/Sildur's Enhanced Default v1.16 Fancy.zip
+
+# Sildur's Vibrant Shaders v1.51 Extreme-VL.zip
+shaderpacks/Sildur's Vibrant Shaders v1.51 Extreme-VL.zip
+
+# Solas Shader V2.8c.zip
+shaderpacks/Solas Shader V2.8c.zip
+
+# 多人游戏服务器列表
+servers.dat
+
+# 排除的文件
+!*.log
+!*.dat_old
+!*.BakaCoreInfo
+!hmclversion.cfg
+!log4j2.xml
+
+==============================================================
+
+# 如果想将额外的文件自动放到压缩包根目录中，可以将它们的路径写在下方。
+# 必须是完整路径。每行中，若以 \ 结尾则代表是文件夹，不以 \ 结尾则代表是文件。
+E:\Minecraft1\.minecraft\versions\Qinglan2ndModPack_UnofficialVersion\ZuluJava\
+E:\Minecraft1\.minecraft\versions\Qinglan2ndModPack_UnofficialVersion\vaultpatcher
